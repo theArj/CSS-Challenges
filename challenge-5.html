@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Challenge 5</title>
+    <style>
+      header {
+        text-align: right;
+      }
+      /* Style the weather report */
+      body {
+        /* Apply the following styles to the body */
+        /* font family 'Helvetica Neue' */
+        font-family: Helvetica;
+        /* font size 20px */
+        font-size: 20px;
+        /* line height 1.5 */
+        line-height: 1.5;
+        /* Color #333 dark gray */
+        color: #333;
+        /* background color #eee light gray */
+        background-color: #eee;
+      }
 
-<head>
-  <title>Challenge 5</title>
-  <style>
-    /* Style the weather report */
+      dt {
+        /* Style the dt (definition title) */
+        /* Make the font really big! 2em */
+        font-size: 2em;
+        /* Make the background color light gray #ccc */
+        background-color: rgb(42, 86, 206);
+      }
 
-    /* Apply the following styles to the body */
-      /* font family 'Helvetica Neue' */
-      /* font size 20px */
-      /* line height 1.5 */
-      /* Color #333 dark gray */
-      /* background color #eee light gray */
-      
+      dd {
+        /* Style the dd (define description) */
+        /* make the font big 1.5em */
+        font-size: 1.5em;
+        /* Background color #ddd */
+        background-color: rgb(93, 115, 190);
+        /* Remove the by setting margin: 0 */
+        margin-left: 0;
+      }
 
-    /* Style the dt (definition title) */
-      /* Make the font really big! 2em */
-      /* Make the background color light gray #ccc */
-      
+      /* Style both the dt and dd */
+      /* Using the comma groups selectors */
+      dt,
+      dd {
+        /* Add some space between these elements and their content */
+        /* padding: 0.5em */
+        padding: 0.5em;
+      }
 
-    /* Style the dd (definition) */
-      /* make the font big 1.5em */
-      /* Background color #ddd */
-      /* Remove the by setting margin: 0 */
-      
-
-
-    /* Style both the dt and dd */
-    /* Using the comma groups selectors */
-    dt, dd {
-      /* Add some space between these elements and their content */
-      /* padding: 0.5em */
-      
-    }
-
-    /* Stretch Challenges: 
+      /* Stretch Challenges: 
     
     - Adjust these styles to your taste. What do you think would 
     look best here? 
@@ -48,28 +62,31 @@
     - Use text-align to move the heading text to the right. 
 
      */
+    </style>
+  </head>
 
-  </style>
-</head>
+  <body>
+    <article>
+      <header>
+        <h1>Weather forecast for Seattle</h1>
+        <p>Three day forecast</p>
+      </header>
+      <dl>
+        <dt><time datetime="2018-03-03">03 March 2018</time></dt>
+        <dd>Rain.</dd>
 
-<body>
+        <dt><time datetime="2018-03-04">04 March 2018</time></dt>
+        <dd>Periods of rain.</dd>
 
-<article>
-  <header>
-    <h1>Weather forecast for Seattle</h1>
-    <p>Three day forecast</p>
-  </header>
-  <dl>
-    <dt><time datetime="2018-03-03">03 March 2018</time></dt>
-    <dd>Rain.</dd>
+        <dt><time datetime="2018-03-05">05 March 2018</time></dt>
+        <dd>Heavy rain.</dd>
 
-    <dt><time datetime="2018-03-04">04 March 2018</time></dt>
-    <dd>Periods of rain.</dd>
+        <dt><time datetime="2018-03-06">06 March 2018</time></dt>
+        <dd>Partially cloudy.</dd>
 
-    <dt><time datetime="2018-03-05">05 March 2018</time></dt>
-    <dd>Heavy rain.</dd>
-  </dl>
-</article>
-
-</body>
+        <dt><time datetime="2018-03-07">07 March 2018</time></dt>
+        <dd>Sunny and clear.</dd>
+      </dl>
+    </article>
+  </body>
 </html>
